@@ -21,8 +21,8 @@ Styles must still have a format-wise valid signature appended, it is just not ve
 ## Operating System Support\*
 
 * Windows 8.1
-* Windows 10 (tested: 1507, 1607, 1809, 1903, 1909, 2004, 20H2, 21H1, 21H2, 20348.*)
-* Windows 11 (tested: 21H2)
+* Windows 10
+* Windows 11 (tested: 21H2, 22H2)
 * Future versions\*\*
 
 \* Windows 7 or older will never be supported due to the way themes are implemented.
@@ -40,20 +40,6 @@ Styles must still have a format-wise valid signature appended, it is just not ve
 scoop bucket add extras
 scoop install secureuxtheme
 ```
-
-## Download is MALWARE???
-
-Some silly antiviruses tend to flag the tool as malware, because it's unsigned (this method of detection [clearly](https://www.securityweek.com/use-fake-code-signing-certificates-malware-surges) [works](https://www.zdnet.com/article/hackers-are-selling-legitimate-code-signing-certificates-to-evade-malware-detection/) [btw](https://web.archive.org/web/20200720160419/http://signedmalware.org/). I'm submitting all releases before release to Microsoft for analysis if they're detected by Defender, but I can't guarantee the same for all the other AVs. If you have a signing certificate and are willing help signing, please contact me.
-
-### Garbage Antiviruses
-
-Some antiviruses might not detect `ThemeTool.exe` but detect the installed dll (`system32\SecureUxTheme.dll`) and delete it. If this happens your computer will be stuck at the login screen. See the FAQ entry for fixing this, and I'd recommend getting rid of the garbage AV that caused this.
-
-**Because of this, after install you might want to add SecureUxTheme.dll to the exclusions of your antivirus, so it doesn't randomly break your install.**
-
-### But I still don't trust it.
-
-Compile it yourself.
 
 ## LogonUI fix
 
